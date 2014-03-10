@@ -1,0 +1,107 @@
+﻿* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background: #09060F url('../img/right.png') no-repeat 100% 0;
+	background-color: #09060F;
+	font-family: "Segoe UI";
+	color: #efefef;
+	font-size: 36px;
+
+}
+
+body, html {
+	height: 100%;
+	max-height: 100%;
+	overflow: hidden;
+}
+
+#infoBox {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	top: 0;
+	z-index: 3;
+	text-align: center;
+	overflow: hidden;
+	/*background: transparent url('../img/left.png') no-repeat 50% 98%;*/
+	text-shadow: 2px 2px 4px #09060F;
+}
+
+@media screen and (min-width: 1024px) {
+	#infoBox {
+		width: 480px;
+	}
+	#infoBox object {
+		width: 480px;
+		height: 320px;
+	}
+	#chatBox {
+		left: 480px;
+	}
+	#infoBox img {
+		max-width: 480px;
+	}
+}
+@media screen and (max-width: 1024px) {
+	body {
+		font-size: 24px;
+	}
+	#infoBox {
+		width: 320px;
+		background-size: 300px;
+	}
+	#infoBox object {
+		width: 320px;
+		height: 240px;
+	}
+	#chatBox{
+		left: 320px;
+	}
+	#infoBox img {
+		max-width: 320px;
+	}
+}
+
+#infoBox p {
+	padding: 10px;
+}
+
+#chatBox {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	overflow-y: hidden;
+}
+
+#chatBox p {
+	padding: 2px 10px 2px 10px;
+	overflow: hidden;
+}
+
+#chatBox p:nth-child(even) {
+	background-color: rgba(255, 255, 255, 0.07);
+}
+
+.modMessage {
+	color: #1d1;
+}
+.modMessage:before {
+	content: 'Valvoja: ';
+}
+
+#inputBar {
+	position: absolute;
+	bottom: 0;
+}
+
+#inputBar #inputBox {
+	font-size: 26px;
+}
+
+#inputBar #sendButton {
+}
+

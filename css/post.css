@@ -1,0 +1,35 @@
+﻿* {
+	margin: 0px;
+	padding: 0px;
+}
+
+fieldset {
+	border: 0;
+}
+
+a {
+	color: #CCFFCC;
+}
+
+body {
+	background: #09060F url('../img/right.png') no-repeat 100% 0;
+	background-color: #09060F;
+	font-family: "Segoe UI";
+	color: #efefef;
+}
+
+h1, h2 {
+	font-weight: normal;
+}
+
+body, html {
+	overflow: hidden;
+	padding: 50px;
+}
+
+input {
+	font-size: 16px;
+}
+input[type='text'] {
+	width: 400px;
+}
